@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +11,70 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.calculette{
+  border: solid black 3px;
+  border-radius: 20px;
+  margin: 1%;
+  width: 40%;
+  background: linear-gradient(#000000, #525254);
+}
+
+.titre{
+  font-family: 'Bungee Inline', cursive;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+}
+
+.ecran{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  border-radius: 10px;
+  border: solid 2px black;
+  width: 400px;
+  height: 100px;
+  background-color: white;
+}
+
+.touches{
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  border-radius: 10px;
+}
+
+.operator{
+  display: flex;
+  justify-content: center;
+}
+
+td{
+  font-size: 40px;
+  text-align: center;
+  height: 60px;
+  width: 90px;
+}
+
+.egal{
+  margin-bottom: 1%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.equal{
+  width: 100%;
+  font-size: 60px;
+}
+
+.casio{
+  font-family: 'Bungee Inline', cursive;
 }
