@@ -1,24 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
 .calculette{
   border: solid black 3px;
   border-radius: 20px;
   margin: 1%;
   width: 40%;
-  background: linear-gradient(#000000, #525254);
+  background: linear-gradient(#000000, #19191a);
+  box-shadow: 10px 10px 10px black;
 }
 
 .titre{
@@ -30,6 +18,7 @@ code {
 }
 
 .ecran{
+  margin-bottom: 1%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -37,33 +26,23 @@ code {
   font-size: 50px;
   border-radius: 10px;
   border: solid 2px black;
-  width: 400px;
+  width: 90%;
   height: 100px;
   background-color: white;
 }
 
 .touches{
-  display: flex;
-  justify-content: center;
-}
-
-button{
-  border-radius: 10px;
-}
-
-.operator{
-  display: flex;
-  justify-content: center;
-}
-
-td{
+  flex-wrap: wrap;
   font-size: 40px;
   text-align: center;
   height: 60px;
   width: 90px;
+  border-radius: 10px;
+  margin: 1%;
 }
 
 .egal{
+  width: 90%;
   margin-bottom: 1%;
   margin-right: auto;
   margin-left: auto;
@@ -71,10 +50,13 @@ td{
 }
 
 .equal{
-  width: 100%;
+  width: 90%;
   font-size: 60px;
+  border-radius: 10px;
 }
 
-.casio{
-  font-family: 'Bungee Inline', cursive;
+.lestouches{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

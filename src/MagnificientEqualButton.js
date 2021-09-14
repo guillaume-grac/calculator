@@ -1,5 +1,6 @@
 
 function MagnificientEqualButton() {
+
     return (
         <section className="egal">
             <button className="equal">=</button>
