@@ -1,7 +1,9 @@
 
-function AmazingNumberButton(number) {
+function AmazingNumberButton(props) {
 
-    return <button className="touches">{number.name}</button>;
+    return <button onClick={props.handleClick} className="touches btn-secondary" value={props.name}>{props.name}</button>;
+
+
 }
 
 export default AmazingNumberButton;

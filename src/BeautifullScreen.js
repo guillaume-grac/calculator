@@ -3,7 +3,7 @@ function BeautifullScreen(props) {
 
     return (
         <section className="ecran">
-            {props.number}
+            {props.nombre}
         </section>
     );
 }

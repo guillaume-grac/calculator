@@ -1,12 +1,7 @@
 
-function GreatOperationButton() {
+function GreatOperationButton(operator) {
 
-    const operator = ['+', '-', 'x', '/']
-
-    return operator.map((operator) =>
-
-        <button className="touches">{operator}</button>
-    )
+    return <button className="touches btn-secondary">{operator.name}</button>;
 }
 
 export default GreatOperationButton;

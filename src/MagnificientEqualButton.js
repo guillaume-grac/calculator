@@ -1,10 +1,8 @@
 
-function MagnificientEqualButton() {
+function MagnificientEqualButton(equal) {
 
     return (
-        <section className="egal">
-            <button className="equal">=</button>
-        </section>
+            <button className="equal">{equal.name}</button>
     );
 }
 

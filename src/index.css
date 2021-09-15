@@ -1,62 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
 
 .calculette{
-  border: solid black 3px;
-  border-radius: 20px;
-  margin: 1%;
-  width: 40%;
+  margin: 10% auto auto;
+  border: solid orangered 3px;
+  width: 20%;
   background: linear-gradient(#000000, #19191a);
   box-shadow: 10px 10px 10px black;
+  justify-content: center;
 }
 
 .titre{
   font-family: 'Bungee Inline', cursive;
   text-align: center;
   font-weight: bold;
-  font-style: italic;
   color: white;
+  font-size: 20px;
 }
 
 .ecran{
+  padding-right: 1%;
   margin-bottom: 1%;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  text-align: right;
   font-weight: bold;
-  font-size: 50px;
-  border-radius: 10px;
+  font-size: 30px;
   border: solid 2px black;
   width: 90%;
-  height: 100px;
+  height: 50px;
   background-color: white;
 }
 
 .touches{
   flex-wrap: wrap;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
-  height: 60px;
-  width: 90px;
-  border-radius: 10px;
+  height: 55px;
+  width: 45px;
+  border-radius: 5px;
   margin: 1%;
 }
 
-.egal{
-  width: 90%;
-  margin-bottom: 1%;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-}
-
 .equal{
-  width: 90%;
-  font-size: 60px;
-  border-radius: 10px;
+  width: 85%;
+  font-size: 40px;
+  border-radius: 5px;
+  margin: 1%;
 }
 
 .lestouches{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 300px;
 }
