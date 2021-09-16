@@ -1,15 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+body{
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .calculette{
   margin: 10% auto auto;
-  border: solid orangered 3px;
   width: 20%;
-  background: linear-gradient(#000000, #19191a);
-  box-shadow: 10px 10px 10px black;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 0.5px );
+  -webkit-backdrop-filter: blur( 0.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
   justify-content: center;
 }
 
 .titre{
+  margin-top: 2%;
   font-family: 'Bungee Inline', cursive;
   text-align: center;
   font-weight: bold;
@@ -19,33 +28,47 @@
 
 .ecran{
   padding-right: 1%;
-  margin-bottom: 1%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 5% auto;
   text-align: right;
   font-weight: bold;
   font-size: 30px;
-  border: solid 2px black;
   width: 90%;
   height: 50px;
-  background-color: white;
+  background: rgba( 255, 255, 255, 0.5 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .touches{
+  color: #282c34;
   flex-wrap: wrap;
   font-size: 30px;
   text-align: center;
   height: 55px;
   width: 45px;
-  border-radius: 5px;
   margin: 1%;
+  background: rgba( 255, 255, 255, 0.6 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .equal{
+  color: #282c34;
   width: 85%;
   font-size: 40px;
-  border-radius: 5px;
-  margin: 1%;
+  margin: 5%;
+  background: rgba( 255, 255, 255, 0.6 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .lestouches{

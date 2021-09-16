@@ -1,7 +1,7 @@
 
-function GreatOperationButton(operator) {
+function GreatOperationButton(props) {
 
-    return <button className="touches btn-secondary">{operator.name}</button>;
+    return <button onClick={props.handleClick} className="touches btn-secondary" value={props.name}>{props.name}</button>;
 }
 
 export default GreatOperationButton;

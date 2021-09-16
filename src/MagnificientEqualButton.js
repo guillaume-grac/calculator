@@ -1,8 +1,8 @@
 
-function MagnificientEqualButton(equal) {
+function MagnificientEqualButton(props) {
 
     return (
-            <button className="equal">{equal.name}</button>
+            <button className="equal btn-secondary" onClick={props.handleClick} value={props.name}>{props.name}</button>
     );
 }
 
