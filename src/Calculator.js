@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import TheTitle from './TheTitle';
+import ItsOver9000 from "./ItsOver9000";
 import BeautifullScreen from './BeautifullScreen';
 import AmazingNumberButton from './AmazingNumberButton';
 import GreatOperationButton from './GreatOperationButton';
@@ -11,6 +12,7 @@ function Calculator(){
     /*const [nombre, setNombre] = useState(''); // useState c'est global*/
     /*const [operator, setOpera] = useState("");*/
     const [conca, setConca] = useState("");
+    const [its, setOver] = useState(false)
 
     function handleClick(e) {
 
@@ -29,6 +31,7 @@ function Calculator(){
             case '*':
                 return setConca((conca+event).substr(0,15));
             case 'C':
+                setOver(false)
                 return setConca("");
             case '=':
                 //Limiter nombre de caractères
@@ -36,8 +39,10 @@ function Calculator(){
                 let result = eval(conca.substr(0,15));
 
                 if(result >= 9000){
+                    setOver(true)
                     return setConca('ITS OVER 9000!!!')
                 }else{
+                    setOver(false)
                     return setConca(result);
                 }
 
@@ -48,6 +53,7 @@ function Calculator(){
     return(
         <section className="calculette">
             <TheTitle />
+            {its ? <ItsOver9000 /> : <div></div>}
             <BeautifullScreen number='0' conca={conca} />
             <section className="lestouches">
                 <AmazingNumberButton name="1" handleClick={handleClick}/>
